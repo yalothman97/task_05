@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>List</title>
-	</head>
-	<body>
-		{% for restaurant in restaurants %}
-			<a href="{% url 'restaurant-detail' restaurant.id %}">
-				<h1>{{restaurant.name}}</h1>
-			</a>
-			<h2>{{restaurant.description}}</h2>
-			<br>
-		{% endfor %}
-
-	</body>
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+    </head>
+    <body>
+        {% for restaurant in restaurants %}
+            <a href="#">
+                <ul>
+                    <li></li>
+                </ul>
+            </a>
+        {% endfor %}
+    </body>
 </html>
